@@ -40,3 +40,18 @@ This is a **console-based Employee Management System** developed using **Core Ja
    ```bash
    git clone https://github.com/Abhishek-Git-01/Employee-Management-System-Using-Core-Java.git
    cd Employee-Management-System-Using-Core-Java
+
+### Database creation
+CREATE DATABASE employeedb;
+USE employeedb;
+
+CREATE TABLE Employee (
+    empId INT PRIMARY KEY,
+    name VARCHAR(100),
+    branch VARCHAR(100),
+    salary DOUBLE
+);
+# DB credentials
+String url = "jdbc:mysql://localhost:3306/employeedb";
+String user = "root";
+String password = "your_password";
